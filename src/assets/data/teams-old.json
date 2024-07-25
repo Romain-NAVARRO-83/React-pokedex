@@ -1,0 +1,1343 @@
+[
+  {
+    "id": 1,
+    "name": "Bouktou",
+    "description": "Description de la team",
+    "pokemons": [
+      {
+        "id": 1,
+        "name": "Bulbizarre",
+        "hp": 45,
+        "atk": 49,
+        "def": 49,
+        "atk_spe": 65,
+        "def_spe": 65,
+        "speed": 45,
+        "team_pokemon": { "pokemon_id": 1, "team_id": 1 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 1, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 1, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Herbizarre",
+        "hp": 60,
+        "atk": 62,
+        "def": 63,
+        "atk_spe": 80,
+        "def_spe": 80,
+        "speed": 60,
+        "team_pokemon": { "pokemon_id": 2, "team_id": 1 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 2, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 2, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Florizarre",
+        "hp": 80,
+        "atk": 82,
+        "def": 83,
+        "atk_spe": 100,
+        "def_spe": 100,
+        "speed": 80,
+        "team_pokemon": { "pokemon_id": 3, "team_id": 1 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 3, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 3, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Salameche",
+        "hp": 39,
+        "atk": 52,
+        "def": 43,
+        "atk_spe": 60,
+        "def_spe": 50,
+        "speed": 65,
+        "team_pokemon": { "pokemon_id": 4, "team_id": 1 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 4, "type_id": 6 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "fezqfdsvq",
+    "description": "Description de la team",
+    "pokemons": [
+      {
+        "id": 1,
+        "name": "Bulbizarre",
+        "hp": 45,
+        "atk": 49,
+        "def": 49,
+        "atk_spe": 65,
+        "def_spe": 65,
+        "speed": 45,
+        "team_pokemon": { "pokemon_id": 1, "team_id": 2 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 1, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 1, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Herbizarre",
+        "hp": 60,
+        "atk": 62,
+        "def": 63,
+        "atk_spe": 80,
+        "def_spe": 80,
+        "speed": 60,
+        "team_pokemon": { "pokemon_id": 2, "team_id": 2 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 2, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 2, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Florizarre",
+        "hp": 80,
+        "atk": 82,
+        "def": 83,
+        "atk_spe": 100,
+        "def_spe": 100,
+        "speed": 80,
+        "team_pokemon": { "pokemon_id": 3, "team_id": 2 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 3, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 3, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Salameche",
+        "hp": 39,
+        "atk": 52,
+        "def": 43,
+        "atk_spe": 60,
+        "def_spe": 50,
+        "speed": 65,
+        "team_pokemon": { "pokemon_id": 4, "team_id": 2 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 4, "type_id": 6 }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Reptincel",
+        "hp": 58,
+        "atk": 64,
+        "def": 58,
+        "atk_spe": 80,
+        "def_spe": 65,
+        "speed": 80,
+        "team_pokemon": { "pokemon_id": 5, "team_id": 2 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 5, "type_id": 6 }
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Dracaufeu",
+        "hp": 78,
+        "atk": 84,
+        "def": 78,
+        "atk_spe": 109,
+        "def_spe": 85,
+        "speed": 100,
+        "team_pokemon": { "pokemon_id": 6, "team_id": 2 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 6, "type_id": 6 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 6, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Carapuce",
+        "hp": 44,
+        "atk": 48,
+        "def": 65,
+        "atk_spe": 50,
+        "def_spe": 64,
+        "speed": 43,
+        "team_pokemon": { "pokemon_id": 7, "team_id": 2 },
+        "types": [
+          {
+            "id": 4,
+            "name": "Eau",
+            "color": "3399ff",
+            "pokemon_type": { "pokemon_id": 7, "type_id": 4 }
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Carabaffe",
+        "hp": 59,
+        "atk": 63,
+        "def": 80,
+        "atk_spe": 65,
+        "def_spe": 80,
+        "speed": 58,
+        "team_pokemon": { "pokemon_id": 8, "team_id": 2 },
+        "types": [
+          {
+            "id": 4,
+            "name": "Eau",
+            "color": "3399ff",
+            "pokemon_type": { "pokemon_id": 8, "type_id": 4 }
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Tortank",
+        "hp": 79,
+        "atk": 83,
+        "def": 100,
+        "atk_spe": 85,
+        "def_spe": 105,
+        "speed": 78,
+        "team_pokemon": { "pokemon_id": 9, "team_id": 2 },
+        "types": [
+          {
+            "id": 4,
+            "name": "Eau",
+            "color": "3399ff",
+            "pokemon_type": { "pokemon_id": 9, "type_id": 4 }
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Chenipan",
+        "hp": 45,
+        "atk": 30,
+        "def": 35,
+        "atk_spe": 20,
+        "def_spe": 20,
+        "speed": 45,
+        "team_pokemon": { "pokemon_id": 10, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 10, "type_id": 8 }
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Chrysacier",
+        "hp": 50,
+        "atk": 20,
+        "def": 55,
+        "atk_spe": 25,
+        "def_spe": 25,
+        "speed": 30,
+        "team_pokemon": { "pokemon_id": 11, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 11, "type_id": 8 }
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Papilusion",
+        "hp": 60,
+        "atk": 45,
+        "def": 50,
+        "atk_spe": 80,
+        "def_spe": 80,
+        "speed": 70,
+        "team_pokemon": { "pokemon_id": 12, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 12, "type_id": 8 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 12, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Aspicot",
+        "hp": 40,
+        "atk": 35,
+        "def": 30,
+        "atk_spe": 20,
+        "def_spe": 20,
+        "speed": 50,
+        "team_pokemon": { "pokemon_id": 13, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 13, "type_id": 8 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 13, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Coconfort",
+        "hp": 45,
+        "atk": 25,
+        "def": 50,
+        "atk_spe": 25,
+        "def_spe": 25,
+        "speed": 35,
+        "team_pokemon": { "pokemon_id": 14, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 14, "type_id": 8 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 14, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Dardargnan",
+        "hp": 65,
+        "atk": 80,
+        "def": 40,
+        "atk_spe": 45,
+        "def_spe": 80,
+        "speed": 75,
+        "team_pokemon": { "pokemon_id": 15, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 15, "type_id": 8 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 15, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Roucool",
+        "hp": 40,
+        "atk": 45,
+        "def": 40,
+        "atk_spe": 35,
+        "def_spe": 35,
+        "speed": 56,
+        "team_pokemon": { "pokemon_id": 16, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 16, "type_id": 9 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 16, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Roucoups",
+        "hp": 63,
+        "atk": 60,
+        "def": 55,
+        "atk_spe": 50,
+        "def_spe": 50,
+        "speed": 71,
+        "team_pokemon": { "pokemon_id": 17, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 17, "type_id": 9 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 17, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Roucarnage",
+        "hp": 83,
+        "atk": 80,
+        "def": 75,
+        "atk_spe": 70,
+        "def_spe": 70,
+        "speed": 91,
+        "team_pokemon": { "pokemon_id": 18, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 18, "type_id": 9 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 18, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Rattata",
+        "hp": 30,
+        "atk": 56,
+        "def": 35,
+        "atk_spe": 25,
+        "def_spe": 35,
+        "speed": 72,
+        "team_pokemon": { "pokemon_id": 19, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 19, "type_id": 9 }
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Rattatac",
+        "hp": 55,
+        "atk": 81,
+        "def": 60,
+        "atk_spe": 50,
+        "def_spe": 70,
+        "speed": 97,
+        "team_pokemon": { "pokemon_id": 20, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 20, "type_id": 9 }
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "name": "Piafabec",
+        "hp": 40,
+        "atk": 60,
+        "def": 30,
+        "atk_spe": 31,
+        "def_spe": 31,
+        "speed": 70,
+        "team_pokemon": { "pokemon_id": 21, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 21, "type_id": 9 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 21, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Rapasdepic",
+        "hp": 65,
+        "atk": 90,
+        "def": 65,
+        "atk_spe": 61,
+        "def_spe": 61,
+        "speed": 100,
+        "team_pokemon": { "pokemon_id": 22, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 22, "type_id": 9 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 22, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Abo",
+        "hp": 35,
+        "atk": 60,
+        "def": 44,
+        "atk_spe": 40,
+        "def_spe": 54,
+        "speed": 55,
+        "team_pokemon": { "pokemon_id": 23, "team_id": 2 },
+        "types": [
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 23, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Arbok",
+        "hp": 60,
+        "atk": 85,
+        "def": 69,
+        "atk_spe": 65,
+        "def_spe": 79,
+        "speed": 80,
+        "team_pokemon": { "pokemon_id": 24, "team_id": 2 },
+        "types": [
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 24, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Pikachu",
+        "hp": 35,
+        "atk": 55,
+        "def": 30,
+        "atk_spe": 50,
+        "def_spe": 40,
+        "speed": 90,
+        "team_pokemon": { "pokemon_id": 25, "team_id": 2 },
+        "types": [
+          {
+            "id": 5,
+            "name": "Électrik",
+            "color": "ffbb33",
+            "pokemon_type": { "pokemon_id": 25, "type_id": 5 }
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Raichu",
+        "hp": 60,
+        "atk": 90,
+        "def": 55,
+        "atk_spe": 90,
+        "def_spe": 80,
+        "speed": 100,
+        "team_pokemon": { "pokemon_id": 26, "team_id": 2 },
+        "types": [
+          {
+            "id": 5,
+            "name": "Électrik",
+            "color": "ffbb33",
+            "pokemon_type": { "pokemon_id": 26, "type_id": 5 }
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "name": "Sabelette",
+        "hp": 50,
+        "atk": 75,
+        "def": 85,
+        "atk_spe": 20,
+        "def_spe": 30,
+        "speed": 40,
+        "team_pokemon": { "pokemon_id": 27, "team_id": 2 },
+        "types": [
+          {
+            "id": 14,
+            "name": "Sol",
+            "color": "ddbb55",
+            "pokemon_type": { "pokemon_id": 27, "type_id": 14 }
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Sablaireau",
+        "hp": 75,
+        "atk": 100,
+        "def": 110,
+        "atk_spe": 45,
+        "def_spe": 55,
+        "speed": 65,
+        "team_pokemon": { "pokemon_id": 28, "team_id": 2 },
+        "types": [
+          {
+            "id": 14,
+            "name": "Sol",
+            "color": "ddbb55",
+            "pokemon_type": { "pokemon_id": 28, "type_id": 14 }
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Nidoran F",
+        "hp": 55,
+        "atk": 47,
+        "def": 52,
+        "atk_spe": 40,
+        "def_spe": 40,
+        "speed": 41,
+        "team_pokemon": { "pokemon_id": 29, "team_id": 2 },
+        "types": [
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 29, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Nidorina",
+        "hp": 70,
+        "atk": 62,
+        "def": 67,
+        "atk_spe": 55,
+        "def_spe": 55,
+        "speed": 56,
+        "team_pokemon": { "pokemon_id": 30, "team_id": 2 },
+        "types": [
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 30, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "name": "Nidoqueen",
+        "hp": 90,
+        "atk": 82,
+        "def": 87,
+        "atk_spe": 75,
+        "def_spe": 85,
+        "speed": 76,
+        "team_pokemon": { "pokemon_id": 31, "team_id": 2 },
+        "types": [
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 31, "type_id": 11 }
+          },
+          {
+            "id": 14,
+            "name": "Sol",
+            "color": "ddbb55",
+            "pokemon_type": { "pokemon_id": 31, "type_id": 14 }
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "name": "Nidoran M",
+        "hp": 46,
+        "atk": 57,
+        "def": 40,
+        "atk_spe": 40,
+        "def_spe": 40,
+        "speed": 50,
+        "team_pokemon": { "pokemon_id": 32, "team_id": 2 },
+        "types": [
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 32, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Nidorino",
+        "hp": 61,
+        "atk": 72,
+        "def": 57,
+        "atk_spe": 55,
+        "def_spe": 55,
+        "speed": 65,
+        "team_pokemon": { "pokemon_id": 33, "team_id": 2 },
+        "types": [
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 33, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "name": "Nidoking",
+        "hp": 81,
+        "atk": 92,
+        "def": 77,
+        "atk_spe": 85,
+        "def_spe": 75,
+        "speed": 85,
+        "team_pokemon": { "pokemon_id": 34, "team_id": 2 },
+        "types": [
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 34, "type_id": 11 }
+          },
+          {
+            "id": 14,
+            "name": "Sol",
+            "color": "ddbb55",
+            "pokemon_type": { "pokemon_id": 34, "type_id": 14 }
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "name": "Melofee",
+        "hp": 70,
+        "atk": 45,
+        "def": 48,
+        "atk_spe": 60,
+        "def_spe": 65,
+        "speed": 35,
+        "team_pokemon": { "pokemon_id": 35, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 35, "type_id": 9 }
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "name": "Melodelfe",
+        "hp": 95,
+        "atk": 70,
+        "def": 73,
+        "atk_spe": 85,
+        "def_spe": 90,
+        "speed": 60,
+        "team_pokemon": { "pokemon_id": 36, "team_id": 2 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 36, "type_id": 9 }
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "name": "Goupix",
+        "hp": 38,
+        "atk": 41,
+        "def": 40,
+        "atk_spe": 50,
+        "def_spe": 65,
+        "speed": 65,
+        "team_pokemon": { "pokemon_id": 37, "team_id": 2 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 37, "type_id": 6 }
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "name": "Feunard",
+        "hp": 73,
+        "atk": 76,
+        "def": 75,
+        "atk_spe": 81,
+        "def_spe": 100,
+        "speed": 100,
+        "team_pokemon": { "pokemon_id": 38, "team_id": 2 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 38, "type_id": 6 }
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "name": "Parasect",
+        "hp": 60,
+        "atk": 95,
+        "def": 80,
+        "atk_spe": 60,
+        "def_spe": 80,
+        "speed": 30,
+        "team_pokemon": { "pokemon_id": 47, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 47, "type_id": 8 }
+          },
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 47, "type_id": 10 }
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "name": "Mimitoss",
+        "hp": 60,
+        "atk": 55,
+        "def": 50,
+        "atk_spe": 40,
+        "def_spe": 55,
+        "speed": 45,
+        "team_pokemon": { "pokemon_id": 48, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 48, "type_id": 8 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 48, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "name": "Aeromite",
+        "hp": 70,
+        "atk": 65,
+        "def": 60,
+        "atk_spe": 90,
+        "def_spe": 75,
+        "speed": 90,
+        "team_pokemon": { "pokemon_id": 49, "team_id": 2 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 49, "type_id": 8 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 49, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 146,
+        "name": "Sulfura",
+        "hp": 90,
+        "atk": 100,
+        "def": 90,
+        "atk_spe": 125,
+        "def_spe": 85,
+        "speed": 90,
+        "team_pokemon": { "pokemon_id": 146, "team_id": 2 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 146, "type_id": 6 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 146, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 148,
+        "name": "Draco",
+        "hp": 61,
+        "atk": 84,
+        "def": 65,
+        "atk_spe": 70,
+        "def_spe": 70,
+        "speed": 70,
+        "team_pokemon": { "pokemon_id": 148, "team_id": 2 },
+        "types": [
+          {
+            "id": 3,
+            "name": "Dragon",
+            "color": "7766ee",
+            "pokemon_type": { "pokemon_id": 148, "type_id": 3 }
+          }
+        ]
+      },
+      {
+        "id": 149,
+        "name": "Dracolosse",
+        "hp": 91,
+        "atk": 134,
+        "def": 95,
+        "atk_spe": 100,
+        "def_spe": 100,
+        "speed": 80,
+        "team_pokemon": { "pokemon_id": 149, "team_id": 2 },
+        "types": [
+          {
+            "id": 3,
+            "name": "Dragon",
+            "color": "7766ee",
+            "pokemon_type": { "pokemon_id": 149, "type_id": 3 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 149, "type_id": 17 }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "fakename",
+    "description": "Description de la team",
+    "pokemons": [
+      {
+        "id": 1,
+        "name": "Bulbizarre",
+        "hp": 45,
+        "atk": 49,
+        "def": 49,
+        "atk_spe": 65,
+        "def_spe": 65,
+        "speed": 45,
+        "team_pokemon": { "pokemon_id": 1, "team_id": 3 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 1, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 1, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Herbizarre",
+        "hp": 60,
+        "atk": 62,
+        "def": 63,
+        "atk_spe": 80,
+        "def_spe": 80,
+        "speed": 60,
+        "team_pokemon": { "pokemon_id": 2, "team_id": 3 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 2, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 2, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Florizarre",
+        "hp": 80,
+        "atk": 82,
+        "def": 83,
+        "atk_spe": 100,
+        "def_spe": 100,
+        "speed": 80,
+        "team_pokemon": { "pokemon_id": 3, "team_id": 3 },
+        "types": [
+          {
+            "id": 10,
+            "name": "Plante",
+            "color": "77cc55",
+            "pokemon_type": { "pokemon_id": 3, "type_id": 10 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 3, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Salameche",
+        "hp": 39,
+        "atk": 52,
+        "def": 43,
+        "atk_spe": 60,
+        "def_spe": 50,
+        "speed": 65,
+        "team_pokemon": { "pokemon_id": 4, "team_id": 3 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 4, "type_id": 6 }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Reptincel",
+        "hp": 58,
+        "atk": 64,
+        "def": 58,
+        "atk_spe": 80,
+        "def_spe": 65,
+        "speed": 80,
+        "team_pokemon": { "pokemon_id": 5, "team_id": 3 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 5, "type_id": 6 }
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Dracaufeu",
+        "hp": 78,
+        "atk": 84,
+        "def": 78,
+        "atk_spe": 109,
+        "def_spe": 85,
+        "speed": 100,
+        "team_pokemon": { "pokemon_id": 6, "team_id": 3 },
+        "types": [
+          {
+            "id": 6,
+            "name": "Feu",
+            "color": "ff4422",
+            "pokemon_type": { "pokemon_id": 6, "type_id": 6 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 6, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Carapuce",
+        "hp": 44,
+        "atk": 48,
+        "def": 65,
+        "atk_spe": 50,
+        "def_spe": 64,
+        "speed": 43,
+        "team_pokemon": { "pokemon_id": 7, "team_id": 3 },
+        "types": [
+          {
+            "id": 4,
+            "name": "Eau",
+            "color": "3399ff",
+            "pokemon_type": { "pokemon_id": 7, "type_id": 4 }
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Carabaffe",
+        "hp": 59,
+        "atk": 63,
+        "def": 80,
+        "atk_spe": 65,
+        "def_spe": 80,
+        "speed": 58,
+        "team_pokemon": { "pokemon_id": 8, "team_id": 3 },
+        "types": [
+          {
+            "id": 4,
+            "name": "Eau",
+            "color": "3399ff",
+            "pokemon_type": { "pokemon_id": 8, "type_id": 4 }
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Chrysacier",
+        "hp": 50,
+        "atk": 20,
+        "def": 55,
+        "atk_spe": 25,
+        "def_spe": 25,
+        "speed": 30,
+        "team_pokemon": { "pokemon_id": 11, "team_id": 3 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 11, "type_id": 8 }
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Papilusion",
+        "hp": 60,
+        "atk": 45,
+        "def": 50,
+        "atk_spe": 80,
+        "def_spe": 80,
+        "speed": 70,
+        "team_pokemon": { "pokemon_id": 12, "team_id": 3 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 12, "type_id": 8 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 12, "type_id": 17 }
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Coconfort",
+        "hp": 45,
+        "atk": 25,
+        "def": 50,
+        "atk_spe": 25,
+        "def_spe": 25,
+        "speed": 35,
+        "team_pokemon": { "pokemon_id": 14, "team_id": 3 },
+        "types": [
+          {
+            "id": 8,
+            "name": "Insecte",
+            "color": "aabb22",
+            "pokemon_type": { "pokemon_id": 14, "type_id": 8 }
+          },
+          {
+            "id": 11,
+            "name": "Poison",
+            "color": "aa5599",
+            "pokemon_type": { "pokemon_id": 14, "type_id": 11 }
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Roucool",
+        "hp": 40,
+        "atk": 45,
+        "def": 40,
+        "atk_spe": 35,
+        "def_spe": 35,
+        "speed": 56,
+        "team_pokemon": { "pokemon_id": 16, "team_id": 3 },
+        "types": [
+          {
+            "id": 9,
+            "name": "Normal",
+            "color": "bbaabb",
+            "pokemon_type": { "pokemon_id": 16, "type_id": 9 }
+          },
+          {
+            "id": 17,
+            "name": "Vol",
+            "color": "6699ff",
+            "pokemon_type": { "pokemon_id": 16, "type_id": 17 }
+          }
+        ]
+      }
+    ]
+  }
+]
