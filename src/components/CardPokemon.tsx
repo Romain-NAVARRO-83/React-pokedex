@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Iteam } from '../@types/team';
+// import { Iteam } from '../@types/team';
 
 interface Ipokemon {
   toggleModal: () => void;
@@ -22,7 +22,6 @@ interface Ipokemon {
         type_id: number;
       };
     }[];
-    teams: Iteam[];
   };
 }
 export default function CardPokemon({

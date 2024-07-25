@@ -1,5 +1,6 @@
 import teams from '../assets/data/teams.json';
 import CardTeam from './CardTeam';
+
 interface Iteams {
   toggleModal: () => void;
   changeModalContent: (content: string, id: number) => void;
