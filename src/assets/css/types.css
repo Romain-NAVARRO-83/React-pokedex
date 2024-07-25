@@ -1,0 +1,105 @@
+:root {
+  /* Pokemon variables */
+  --mainpadding: 20px;
+  --mainradius: 3px;
+  --pokeyellow: #ffcb05;
+  --pokeblue: #2a75bb;
+
+
+}
+
+.typePlante,
+.specsPlante progress::-webkit-progress-value {
+  background-color: rgb(119, 204, 85)
+}
+
+.type11 {
+  background-color: rgb(170, 85, 153)
+}
+
+.typeAcier,
+.specsAcier progress::-webkit-progress-value {
+  background-color: #aaaabb;
+
+}
+
+.typeCombat,
+.specsCombat progress::-webkit-progress-value {
+  background-color: #bb5544;
+
+}
+
+.typeDragon,
+.specsDragon progress::-webkit-progress-value {
+  background-color: #7766ee
+}
+
+.typeEau,
+.specsEau progress::-webkit-progress-value {
+  background-color: #3399ff
+}
+
+.typeÉlectrik,
+.specsÉlectrik progress::-webkit-progress-value {
+  background-color: #ffbb33
+}
+
+.typeFeu,
+.specsFeu progress::-webkit-progress-value {
+  background-color: #ff4422
+}
+
+.typeGlace,
+.specsGalce progress::-webkit-progress-value {
+  background-color: #77ddff
+}
+
+.typeInsecte,
+.specsInsecte progress::-webkit-progress-value {
+  background-color: #aabb22
+}
+
+.typeNormal,
+.specsNormal progress::-webkit-progress-value {
+  background-color: #bbaabb
+}
+
+.typePlante,
+.specsPlante progress::-webkit-progress-value {
+  background-color: #77cc55
+}
+
+.typePoison,
+.specsPoison progress::-webkit-progress-value {
+  background-color: #aa5599
+}
+
+.typePsy,
+.specsPsy progress::-webkit-progress-value {
+  background-color: #ff5599
+}
+
+.typeRoche,
+.specsRoche progress::-webkit-progress-value {
+  background-color: #bbaa66
+}
+
+.typeSol,
+.specsSol progress::-webkit-progress-value {
+  background-color: #ddbb55
+}
+
+.typeSpectre,
+.specsSpectre progress::-webkit-progress-value {
+  background-color: #6666bb
+}
+
+.typeTénèbres,
+.specsTénèbres progress::-webkit-progress-value {
+  background-color: #665544
+}
+
+.typeVol,
+.specsVol progress::-webkit-progress-value {
+  background-color: #6699ff
+}

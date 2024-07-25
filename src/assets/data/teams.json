@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Rocket",
+    "description": "L'équipe Rocket, célèbre pour ses plans machiavéliques.",
+    "pokemons": [6, 24, 52, 88, 94]
+  },
+  {
+    "id": 2,
+    "name": "Magma",
+    "description": "L'équipe Magma, spécialisée dans les Pokémon de type Feu.",
+    "pokemons": [58, 77, 126, 146]
+  },
+  {
+    "id": 3,
+    "name": "Aqua",
+    "description": "L'équipe Aqua, spécialisée dans les Pokémon de type Eau.",
+    "pokemons": [7, 54, 72, 90, 98, 130]
+  },
+  {
+    "id": 4,
+    "name": "Galaxie",
+    "description": "L'équipe Galaxie, aspirant à remodeler l'univers.",
+    "pokemons": [79, 92, 109, 132, 150, 151, 243]
+  },
+  {
+    "id": 5,
+    "name": "Plasma",
+    "description": "L'équipe Plasma, souhaitant libérer les Pokémon.",
+    "pokemons": [25, 53, 134]
+  },
+  {
+    "id": 6,
+    "name": "Flare",
+    "description": "L'équipe Flare, cherchant à créer un monde plus beau.",
+    "pokemons": [37, 59, 38, 136, 137, 157, 219]
+  },
+  {
+    "id": 7,
+    "name": "Skull",
+    "description": "L'équipe Skull, constituée de malfaiteurs rebelles.",
+    "pokemons": [41, 88, 89, 103]
+  },
+  {
+    "id": 8,
+    "name": "Go-Rock",
+    "description": "L'équipe Go-Rock, spécialisée dans les Pokémon de type Roche.",
+    "pokemons": [74, 75, 95, 111, 112]
+  },
+  {
+    "id": 9,
+    "name": "Snagem",
+    "description": "L'équipe Snagem, connue pour ses techniques de vol de Pokémon.",
+    "pokemons": [50, 51, 52, 53, 67, 68]
+  },
+  {
+    "id": 10,
+    "name": "Shadow",
+    "description": "L'équipe Shadow, utilisant des Pokémon obscurs.",
+    "pokemons": [43, 44, 92, 200, 353, 354, 425, 426]
+  }
+]

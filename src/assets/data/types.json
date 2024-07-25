@@ -1,0 +1,19 @@
+[
+  { "id": 1, "name": "Acier", "color": "aaaabb" },
+  { "id": 2, "name": "Combat", "color": "bb5544" },
+  { "id": 3, "name": "Dragon", "color": "7766ee" },
+  { "id": 4, "name": "Eau", "color": "3399ff" },
+  { "id": 5, "name": "Électrik", "color": "ffbb33" },
+  { "id": 6, "name": "Feu", "color": "ff4422" },
+  { "id": 7, "name": "Glace", "color": "77ddff" },
+  { "id": 8, "name": "Insecte", "color": "aabb22" },
+  { "id": 9, "name": "Normal", "color": "bbaabb" },
+  { "id": 10, "name": "Plante", "color": "77cc55" },
+  { "id": 11, "name": "Poison", "color": "aa5599" },
+  { "id": 12, "name": "Psy", "color": "ff5599" },
+  { "id": 13, "name": "Roche", "color": "bbaa66" },
+  { "id": 14, "name": "Sol", "color": "ddbb55" },
+  { "id": 15, "name": "Spectre", "color": "6666bb" },
+  { "id": 16, "name": "Ténèbres", "color": "665544" },
+  { "id": 17, "name": "Vol", "color": "6699ff" }
+]
