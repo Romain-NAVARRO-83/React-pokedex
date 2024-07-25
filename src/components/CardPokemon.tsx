@@ -31,7 +31,7 @@ export default function CardPokemon({
 }: Ipokemon) {
   return (
     <article className="card l3 m4 s12 cardpokemon">
-      <figure className="groundshadow">
+      <figure className="groundshadow test">
         <img
           src={`/src/assets/img/${pokemon.id}.webp`}
           alt={pokemon.name}
