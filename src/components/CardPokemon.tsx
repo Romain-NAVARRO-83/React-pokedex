@@ -45,7 +45,7 @@ export default function CardPokemon({
           }}
         />
       </figure>
-      <h3>{pokemon.name}</h3>
+      <h3>{pokemon.name} test</h3>
       {/* <p>{JSON.stringify(pokemon)}</p> */}
       <div className="pokemon-types">
         {pokemon.types.map((type) => {
