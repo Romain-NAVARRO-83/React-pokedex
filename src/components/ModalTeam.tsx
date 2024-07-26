@@ -78,7 +78,7 @@ export default function ModalTeam({ modalContent, toggleModal }: ImodalTeam) {
                 <li key={pokemon.id} className="card flexmaster gap glow-blue">
                   <figure className="s2 m2 l2">
                     <img
-                      src={`/src/assets/img/${pokemon.id}.webp`}
+                      src={`../src/assets/img/${pokemon.id}.webp`}
                       alt={pokemon.name}
                       width={60}
                       height={60}
@@ -119,7 +119,7 @@ export default function ModalTeam({ modalContent, toggleModal }: ImodalTeam) {
                   >
                     <figure className="s2 m2 l2">
                       <img
-                        src={`/src/assets/img/${pokemon.id}.webp`}
+                        src={`../src/assets/img/${pokemon.id}.webp`}
                         alt={pokemon.name}
                         width={60}
                         height={60}

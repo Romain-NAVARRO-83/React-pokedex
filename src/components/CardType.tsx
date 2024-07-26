@@ -23,7 +23,7 @@ export default function CardType({ type }: IcardType) {
           // <>
           <img
             key={typePokemon.id}
-            src={`/src/assets/img/${typePokemon.id}.webp`}
+            src={`../src/assets/img/${typePokemon.id}.webp`}
             width={70}
             height={70}
             alt={typePokemon.name}
