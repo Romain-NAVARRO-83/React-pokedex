@@ -41,7 +41,7 @@ export default function ModalPokemon({ modalContent }: ImodalPokemon) {
       />
       <div id="modal" className={modalState && "active"}> */}
       <div
-        className={`modal-header flexmaster type${myPokemon?.types[0].name}`}
+        className={`modal-header flexmaster test type${myPokemon?.types[0].name}`}
       >
         <div className="s12 m6 l6">
           <h3>{myPokemon?.name}</h3>
