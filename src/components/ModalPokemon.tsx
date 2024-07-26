@@ -50,7 +50,7 @@ export default function ModalPokemon({ modalContent }: ImodalPokemon) {
         <div className="s12 m6 l6">
           <figure className="groundshadow">
             <img
-              src={`/src/assets/img/${modalContent.id}.webp`}
+              src={`/static/images/${modalContent.id}.webp`}
               alt=""
               width="150"
               height="150"
