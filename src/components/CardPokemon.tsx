@@ -56,7 +56,7 @@ export default function CardPokemon({
         }}
       >
         <img
-          src={`http://romainnavarro.net/oclock/mycdn/pokemon-images/${pokemon.id}.webp`}
+          src={`/static/images/${pokemon.id}.webp`}
           alt={pokemon.name}
           width={100}
           height={100}
