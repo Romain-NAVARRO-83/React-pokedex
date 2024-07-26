@@ -9,6 +9,7 @@ interface Imodal {
     id: number;
   };
 }
+
 export default function Modal({
   modalState,
   toggleModal,
@@ -18,14 +19,22 @@ export default function Modal({
   return (
     <>
       <div
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            toggleModal();
+          }
+        }}
+        aria-label="Close modal"
         id="underlay"
+        role="button"
         onClick={() => {
           toggleModal();
         }}
       />
-      <div id="modal" className={modalState && 'active'}>
+      <div id="modal" className={modalState ? 'active' : ''}>
         {modalContent.content === 'pokemon' && (
-          <ModalPokemon modalContent={modalContent} toggleModal={toggleModal} />
+          <ModalPokemon modalContent={modalContent} />
         )}
         {modalContent.content === 'team' && (
           <ModalTeam modalContent={modalContent} toggleModal={toggleModal} />

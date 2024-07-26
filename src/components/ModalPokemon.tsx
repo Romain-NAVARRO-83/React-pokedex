@@ -8,7 +8,6 @@ interface ImodalPokemon {
     id: number;
   };
 }
-
 export default function ModalPokemon({ modalContent }: ImodalPokemon) {
   // const [teams, setTeams] = useState([]);
   // useEffect(() => {
