@@ -75,7 +75,10 @@ export default function ModalTeam({ modalContent, toggleModal }: ImodalTeam) {
           >
             {allPokemons.map((pokemon) =>
               !team?.pokemons.includes(pokemon.id) ? (
-                <li key={pokemon.id} className="card flexmaster gap glow-blue">
+                <li
+                  key={pokemon.id}
+                  className="card test flexmaster gap glow-blue"
+                >
                   <figure className="s2 m2 l2">
                     <img
                       src={`/static/images/${pokemon.id}.webp`}
