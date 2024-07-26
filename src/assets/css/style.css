@@ -293,12 +293,14 @@ li.card button:has(.pokemon) {
 .cardpokemon button:has(.pokemon) {
   transform: scale(1);
   transition: all ease-out .3s;
-  border-width: 0;
+  border: solid 0px transparent;
 
 }
 
-.cardpokemon button:has(.pokemon):hover {
-  border-width: 0;
+.cardpokemon button:has(.pokemon):hover,
+.cardpokemon button:has(.pokemon):active,
+.cardpokemon button:has(.pokemon):focus {
+  border: solid 0px transparent;
 }
 
 .cardpokemon:hover button:has(.pokemon) {
