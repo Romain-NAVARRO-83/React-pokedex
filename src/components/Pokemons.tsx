@@ -1,14 +1,29 @@
 import CardPokemon from './CardPokemon';
 import pokemons from '../assets/data/pokemons.json';
+// import { IPokemons } from '../@types/pokemons';
 
 interface Ipokemons {
-  toggleModal: () => void;
-  changeModalContent: (content: string, id: number) => void;
+  // pokemons: IPokemons[];
+  setModalState: React.Dispatch<React.SetStateAction<boolean>>;
+  modalState: boolean;
+  // changeModalContent: (content: string, id: number) => void;
+  // modalContent: {
+  //   content: string;
+  //   id: number;
+  // };
+  setModalContent: React.Dispatch<
+    React.SetStateAction<{
+      content: string;
+      id: number;
+    }>
+  >;
 }
 
 export default function Pokemons({
-  toggleModal,
-  changeModalContent,
+  // pokemons,
+  setModalState,
+  modalState,
+  setModalContent,
 }: Ipokemons) {
   return (
     <main className="flexmaster gap">
@@ -18,8 +33,9 @@ export default function Pokemons({
           <CardPokemon
             key={pokemon.id}
             pokemon={pokemon}
-            toggleModal={toggleModal}
-            changeModalContent={changeModalContent}
+            modalState={modalState}
+            setModalState={setModalState}
+            setModalContent={setModalContent}
           />
         );
       })}

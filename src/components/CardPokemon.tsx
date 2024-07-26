@@ -2,8 +2,14 @@ import { Link } from 'react-router-dom';
 // import { Iteam } from '../@types/team';
 
 interface Ipokemon {
-  toggleModal: () => void;
-  changeModalContent: (content: string, id: number) => void;
+  modalState: boolean;
+  setModalState: React.Dispatch<React.SetStateAction<boolean>>;
+  setModalContent: React.Dispatch<
+    React.SetStateAction<{
+      content: string;
+      id: number;
+    }>
+  >;
   pokemon: {
     id: number;
     name: string;
@@ -26,9 +32,19 @@ interface Ipokemon {
 }
 export default function CardPokemon({
   pokemon,
-  toggleModal,
-  changeModalContent,
+  modalState,
+  setModalState,
+  setModalContent,
 }: Ipokemon) {
+  function toggleModal() {
+    setModalState(!modalState);
+  }
+  function changeModalContent(newContent: string, newId: number) {
+    setModalContent({
+      content: newContent,
+      id: newId,
+    });
+  }
   return (
     <article className="card l3 m4 s12 cardpokemon">
       <figure className="groundshadow test">
