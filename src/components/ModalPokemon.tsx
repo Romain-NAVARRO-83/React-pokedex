@@ -64,19 +64,24 @@ export default function ModalPokemon({ modalContent }: ImodalPokemon) {
         <div className="s12 m6 l3 pad">
           <h4>Specs</h4>
           <div className={`flexcol specs specs${myPokemon?.types[0].name}`}>
-            {Object.entries(myPokemon).map(
-              ([key, value]) =>
-                ['hp', 'atk', 'def', 'speed', 'atk_spe', 'def_spe'].includes(
-                  key
-                ) && (
-                  <label key={key} htmlFor={key}>
-                    {key}
-                    <progress id="file" value={parseInt(value)} max="100">
-                      {JSON.stringify(value)}
-                    </progress>
-                  </label>
-                )
-            )}
+            {myPokemon &&
+              Object.entries(myPokemon).map(
+                ([key, value]) =>
+                  ['hp', 'atk', 'def', 'speed', 'atk_spe', 'def_spe'].includes(
+                    key
+                  ) && (
+                    <label key={key} htmlFor={key}>
+                      {key}
+                      <progress
+                        id="file"
+                        value={parseInt(value as string, 10)}
+                        max="100"
+                      >
+                        {JSON.stringify(value)}
+                      </progress>
+                    </label>
+                  )
+              )}
           </div>
         </div>
         <div className="s12 m6 l3 pad">
