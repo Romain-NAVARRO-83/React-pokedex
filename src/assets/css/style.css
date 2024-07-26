@@ -243,7 +243,7 @@ li.card {
   align-items: center;
 }
 
-li.card figure {
+li.card button:has(.pokemon) {
   padding: 0;
   margin: 0;
 }
@@ -290,13 +290,18 @@ li.card figure {
   transform-origin: bottom;
 }
 
-.cardpokemon figure {
+.cardpokemon button:has(.pokemon) {
   transform: scale(1);
   transition: all ease-out .3s;
+  border-width: 0;
 
 }
 
-.cardpokemon:hover figure {
+.cardpokemon button:has(.pokemon):hover {
+  border-width: 0;
+}
+
+.cardpokemon:hover button:has(.pokemon) {
   transform: scale(1.2);
   /* margin-bottom: -8px; */
   transition: all ease-out .3s;
@@ -509,6 +514,7 @@ progress::-webkit-progress-value {
 .typebtn {
   aspect-ratio: 1/1;
   width: 20px;
+  display: inline-flex;
   border-radius: 50%;
   padding: 0;
   border: solid 1px rgba(0, 0, 0, .8);
@@ -543,6 +549,10 @@ ul.scrolly {
   overflow-y: auto;
   list-style-type: none;
   padding: 0;
+}
+
+ul.scrolly figure {
+  margin: 0;
 }
 
 .glow-blue {

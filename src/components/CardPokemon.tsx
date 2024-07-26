@@ -47,19 +47,22 @@ export default function CardPokemon({
   }
   return (
     <article className="card l3 m4 s12 cardpokemon">
-      <figure className="groundshadow test">
+      <button
+        className="groundshadow"
+        type="button"
+        onClick={() => {
+          toggleModal();
+          changeModalContent('pokemon', pokemon.id);
+        }}
+      >
         <img
           src={`/src/assets/img/${pokemon.id}.webp`}
           alt={pokemon.name}
           width={100}
           height={100}
           className="pokemon breathover"
-          onClick={() => {
-            toggleModal();
-            changeModalContent('pokemon', pokemon.id);
-          }}
         />
-      </figure>
+      </button>
       <h3>{pokemon.name} test</h3>
       {/* <p>{JSON.stringify(pokemon)}</p> */}
       <div className="pokemon-types">
