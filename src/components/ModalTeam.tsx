@@ -31,7 +31,7 @@ export default function ModalTeam({ modalContent, toggleModal }: ImodalTeam) {
   const team = teams.find((oneTeam) => oneTeam.id === modalContent.id);
   return (
     <>
-      <div className="modal-header flexmaster">
+      <div className="modal-header flexmaster test">
         <div className="s12 m6 l6">
           <h3>Team {team?.name}</h3>
         </div>
