@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
-
+import { useEffect, useRef } from 'react';
+import Sortable from 'sortablejs';
 import teams from '../assets/data/teams.json';
 import pokemons from '../assets/data/pokemons.json';
-import Sortable from 'sortablejs';
 
 const allPokemons = pokemons;
 
@@ -13,22 +12,36 @@ interface ImodalTeam {
   };
   toggleModal: () => void;
 }
-export default function ModalTeam({ modalContent, toggleModal }: ImodalTeam) {
-  useEffect(() => {
-    new Sortable(availablePokemons, {
-      group: 'shared', // set both lists to same group
-      animation: 150,
-    });
 
-    new Sortable(teamPokemons, {
-      group: 'shared',
-      animation: 150,
-    });
-  });
-  // useEffect(() => {
-  //   document.title = 'test';
-  // }, []);
+export default function ModalTeam({ modalContent, toggleModal }: ImodalTeam) {
+  const availablePokemonsRef = useRef<HTMLUListElement>(null);
+  const teamPokemonsRef = useRef<HTMLUListElement>(null);
+
+  // eslint-disable-next-line consistent-return
+  useEffect(() => {
+    const availablePokemonsEl = availablePokemonsRef.current;
+    const teamPokemonsEl = teamPokemonsRef.current;
+
+    if (availablePokemonsEl && teamPokemonsEl) {
+      const sortableAvailable = new Sortable(availablePokemonsEl, {
+        group: 'shared',
+        animation: 150,
+      });
+
+      const sortableTeam = new Sortable(teamPokemonsEl, {
+        group: 'shared',
+        animation: 150,
+      });
+
+      return () => {
+        sortableAvailable.destroy();
+        sortableTeam.destroy();
+      };
+    }
+  }, []); // Add dependencies if needed
+
   const team = teams.find((oneTeam) => oneTeam.id === modalContent.id);
+
   return (
     <>
       <div className="modal-header flexmaster test">
@@ -55,7 +68,11 @@ export default function ModalTeam({ modalContent, toggleModal }: ImodalTeam) {
         </div>
         <div className="s6 m6 l6">
           <h4>Pokemons disponibles</h4>
-          <ul id="availablePokemons" className="scrolly">
+          <ul
+            id="availablePokemons"
+            className="scrolly"
+            ref={availablePokemonsRef}
+          >
             {allPokemons.map((pokemon) =>
               !team?.pokemons.includes(pokemon.id) ? (
                 <li key={pokemon.id} className="card flexmaster gap glow-blue">
@@ -93,7 +110,7 @@ export default function ModalTeam({ modalContent, toggleModal }: ImodalTeam) {
               toggleModal();
             }}
           >
-            <ul id="teamPokemons" className="scrolly">
+            <ul id="teamPokemons" className="scrolly" ref={teamPokemonsRef}>
               {allPokemons.map((pokemon) =>
                 team?.pokemons.includes(pokemon.id) ? (
                   <li
