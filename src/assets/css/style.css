@@ -521,6 +521,7 @@ progress::-webkit-progress-value {
   padding: 0;
   border: solid 1px rgba(0, 0, 0, .8);
   margin: 0 var(--mainpadding);
+  overflow: hidden;
 }
 
 

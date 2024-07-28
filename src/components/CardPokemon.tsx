@@ -1,49 +1,52 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import axios from 'axios';
+// import { Link } from 'react-router-dom';
+import { IPokemon } from '../@types/pokemon';
 // import { Iteam } from '../@types/team';
 
-interface Ipokemon {
+interface IPokemonProps {
   modalState: boolean;
   setModalState: React.Dispatch<React.SetStateAction<boolean>>;
   setModalContent: React.Dispatch<
     React.SetStateAction<{
       content: string;
-      id: number;
     }>
   >;
-  pokemon: {
-    id: number;
-    name: string;
-    hp: number;
-    atk: number;
-    def: number;
-    atk_spe: number;
-    def_spe: number;
-    speed: number;
-    types: {
-      id: number;
-      name: string;
-      color: string;
-      pokemon_type: {
-        pokemon_id: number;
-        type_id: number;
-      };
-    }[];
-  };
+  cardPokemon: IPokemon;
+
+  pokemon: IPokemon;
+  setPokemon: React.Dispatch<React.SetStateAction<IPokemon>>;
 }
 export default function CardPokemon({
-  pokemon,
+  cardPokemon,
   modalState,
   setModalState,
   setModalContent,
-}: Ipokemon) {
+  pokemon,
+  setPokemon,
+}: IPokemonProps) {
   function toggleModal() {
     setModalState(!modalState);
   }
-  function changeModalContent(newContent: string, newId: number) {
+  function changeModalContent(newContent: string) {
     setModalContent({
       content: newContent,
-      id: newId,
     });
+  }
+  // Fetch One Pokemon
+
+  async function fetchPokemon(idPokemon: number) {
+    try {
+      const response = await axios.get(
+        `https://tyradex.vercel.app/api/v1/pokemon/${idPokemon}`
+      );
+      if (response.data) {
+        setPokemon(response.data);
+        console.log(pokemon);
+      }
+    } catch (e) {
+      console.log('Error fetching pokemon:', e);
+    }
   }
   return (
     <article className="card l3 m4 s12 cardpokemon">
@@ -52,30 +55,34 @@ export default function CardPokemon({
         type="button"
         onClick={() => {
           toggleModal();
-          changeModalContent('pokemon', pokemon.id);
+          fetchPokemon(cardPokemon.pokedex_id);
         }}
       >
         <img
-          src={`/static/images/${pokemon.id}.webp`}
-          alt={pokemon.name}
+          src={cardPokemon.sprites.regular}
+          alt={cardPokemon.name.fr}
           width={100}
           height={100}
           className="pokemon breathover"
         />
       </button>
-      <h3>{pokemon.name} test</h3>
-      {/* <p>{JSON.stringify(pokemon)}</p> */}
+      <h3>{cardPokemon.name.fr} test</h3>
       <div className="pokemon-types">
-        {pokemon.types.map((type) => {
+        {cardPokemon.types?.map((type) => {
           return (
-            <Link
+            <button
               type="button"
               className={`type${type.name} typebtn`}
               title={type.name}
               aria-label={type.name}
-              key={type.id}
-              to="/types/:id"
-            />
+              key={type.name}
+              onClick={() => {
+                toggleModal();
+                changeModalContent('pokemon');
+              }}
+            >
+              <img src={type.image} alt={type.name} />
+            </button>
           );
         })}
       </div>

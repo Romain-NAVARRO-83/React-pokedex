@@ -1,3 +1,4 @@
+import { IPokemon } from '../@types/pokemon';
 import ModalPokemon from './ModalPokemon';
 import ModalTeam from './ModalTeam';
 
@@ -6,14 +7,15 @@ interface Imodal {
   toggleModal: () => void;
   modalContent: {
     content: string;
-    id: number;
   };
+  pokemon: IPokemon;
 }
 
 export default function Modal({
   modalState,
   toggleModal,
   modalContent,
+  pokemon,
 }: Imodal) {
   // console.log(modalContent);
   return (
@@ -33,12 +35,13 @@ export default function Modal({
         }}
       />
       <div id="modal" className={modalState ? 'active' : ''}>
-        {modalContent.content === 'pokemon' && (
-          <ModalPokemon modalContent={modalContent} />
+        {/* {JSON.stringify(pokemon)} */}
+        {modalContent.content === 'pokemon' && pokemon && (
+          <ModalPokemon pokemon={pokemon} />
         )}
-        {modalContent.content === 'team' && (
-          <ModalTeam modalContent={modalContent} toggleModal={toggleModal} />
-        )}
+        {/* {modalContent.content === 'team' &&
+          // <ModalTeam modalContent={modalContent} toggleModal={toggleModal} />
+          console.log('team modal')} */}
       </div>
     </>
   );

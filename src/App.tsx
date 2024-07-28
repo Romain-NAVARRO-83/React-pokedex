@@ -1,48 +1,66 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import './assets/css/style.css';
 import { Navigate, Route, Routes } from 'react-router-dom';
-// import axios from 'axios';
+import axios from 'axios';
 import Header from './components/Header';
 import Pokemons from './components/Pokemons';
 import Teams from './components/Teams';
 import Types from './components/Types';
 import Modal from './components/Modal';
 import Footer from './components/Footer';
-// import { IPokemons } from './@types/pokemons';
+import { IPokemon } from './@types/pokemon';
+// import { IPokemon } from './@types/pokemon';
 // import { Iteam } from './@types/team';
 
 function App() {
-  // const [pokemons, setPokemons] = useState<IPokemons[]>([]);
-  // const [team, setTeam] = useState<Iteam[]>([]);
+  const [pokemons, setPokemons] = useState<IPokemon[] | []>([]);
+  const [pokemon, setPokemon] = useState<IPokemon>(pokemons[1]);
+  // Fetch All Pokemons
+  useEffect(() => {
+    const fetchPokemons = async () => {
+      try {
+        const response = await axios.get(
+          'https://tyradex.vercel.app/api/v1/pokemon'
+        );
+        if (response.data) {
+          setPokemons(response.data);
+        }
+      } catch (e) {
+        console.log('Error fetching pokemons:', e);
+      }
+    };
+    fetchPokemons();
+  }, []);
+  // Fetch One Pokemon
   // useEffect(() => {
-  //   const fetchPokemons = async () => {
+  //   const fetchPokemon = async (idPokemon: number) => {
   //     try {
-  //       const response = await axios.get('http://localhost:3000/pokemons');
+  //       const response = await axios.get(
+  //         `https://tyradex.vercel.app/api/v1/pokemon/${idPokemon}`
+  //       );
   //       if (response.data) {
-  //         setPokemons(response.data);
+  //         setPokemon(response.data);
+  //         console.log(pokemon);
   //       }
   //     } catch (e) {
-  //       console.log('Error fetching pokemons:', e);
+  //       console.log('Error fetching pokemon:', e);
   //     }
   //   };
-  //   fetchPokemons();
-  // }, []);
-
+  //   fetchPokemon(1);
+  // }, [pokemon]);
   const [modalState, setModalState] = useState(false);
   const [modalContent, setModalContent] = useState({
     content: 'pokemon',
-    id: 3,
   });
 
   const toggleModal = () => {
     setModalState(!modalState);
   };
 
-  const changeModalContent = (newContent: string, newId: number) => {
+  const changeModalContent = (newContent: string) => {
     setModalContent({
       content: newContent,
-      id: newId,
     });
   };
 
@@ -59,6 +77,9 @@ function App() {
               // changeModalContent={changeModalContent}
               // modalContent={modalContent}
               setModalContent={setModalContent}
+              pokemons={pokemons}
+              pokemon={pokemon}
+              setPokemon={setPokemon}
             />
           }
         />
@@ -80,6 +101,7 @@ function App() {
         modalState={modalState}
         toggleModal={toggleModal}
         modalContent={modalContent}
+        pokemon={pokemon}
       />
     </>
   );

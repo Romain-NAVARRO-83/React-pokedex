@@ -1,4 +1,4 @@
-import { Ipokemons } from './pokemons';
+import { Ipokemons } from './pokemon';
 
 export interface Iteam {
   team: {

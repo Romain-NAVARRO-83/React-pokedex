@@ -1,41 +1,46 @@
 import CardPokemon from './CardPokemon';
-import pokemons from '../assets/data/pokemons.json';
-// import { IPokemons } from '../@types/pokemons';
 
-interface Ipokemons {
-  // pokemons: IPokemons[];
+// import pokemons from '../assets/data/pokemons.json';
+// import { IPokemons } from '../@types/pokemon';
+import { IPokemon } from '../@types/pokemon';
+
+interface IPokemonsProps {
+  pokemons: IPokemon[];
   setModalState: React.Dispatch<React.SetStateAction<boolean>>;
   modalState: boolean;
-  // changeModalContent: (content: string, id: number) => void;
-  // modalContent: {
-  //   content: string;
-  //   id: number;
-  // };
+  pokemon: IPokemon;
+  setPokemon: React.Dispatch<React.SetStateAction<IPokemon>>;
+
   setModalContent: React.Dispatch<
     React.SetStateAction<{
       content: string;
-      id: number;
     }>
   >;
 }
 
 export default function Pokemons({
-  // pokemons,
+  pokemons,
   setModalState,
   modalState,
   setModalContent,
-}: Ipokemons) {
+  pokemon,
+  setPokemon,
+}: IPokemonsProps) {
   return (
+    // fonction de changement de pokemon
+
     <main className="flexmaster gap">
       <h2>Tous les pokemons</h2>
-      {pokemons.map((pokemon) => {
+      {pokemons.slice(1).map((onePokemon) => {
         return (
           <CardPokemon
-            key={pokemon.id}
-            pokemon={pokemon}
+            key={onePokemon.pokedex_id}
+            cardPokemon={onePokemon}
             modalState={modalState}
             setModalState={setModalState}
             setModalContent={setModalContent}
+            setPokemon={setPokemon}
+            pokemon={pokemon}
           />
         );
       })}
