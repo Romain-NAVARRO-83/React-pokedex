@@ -373,6 +373,7 @@ header nav li:last-of-type {
   background-size: cover;
   background-position: center bottom;
   background-blend-mode: multiply;
+  /* mix-blend-mode: darken; */
   position: relative;
 }
 
@@ -515,7 +516,7 @@ progress::-webkit-progress-value {
 
 .typebtn {
   aspect-ratio: 1/1;
-  width: 20px;
+  /* width: 20px; */
   display: inline-flex;
   border-radius: 50%;
   padding: 0;
@@ -524,7 +525,9 @@ progress::-webkit-progress-value {
   overflow: hidden;
 }
 
-
+.typebtn img {
+  object-fit: contain;
+}
 
 .card-header {
   margin: -2em;

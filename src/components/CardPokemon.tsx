@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import axios from 'axios';
 // import { Link } from 'react-router-dom';
 import { IPokemon } from '../@types/pokemon';
+import { Link } from 'react-router-dom';
 // import { Iteam } from '../@types/team';
 
 interface IPokemonProps {
@@ -66,23 +67,24 @@ export default function CardPokemon({
           className="pokemon breathover"
         />
       </button>
-      <h3>{cardPokemon.name.fr} test</h3>
+      <h3>{cardPokemon.name.fr}</h3>
       <div className="pokemon-types">
         {cardPokemon.types?.map((type) => {
           return (
-            <button
+            <Link
               type="button"
               className={`type${type.name} typebtn`}
               title={type.name}
               aria-label={type.name}
               key={type.name}
-              onClick={() => {
-                toggleModal();
-                changeModalContent('pokemon');
-              }}
+              // onClick={() => {
+              //   toggleModal();
+              //   changeModalContent('pokemon');
+              // }}
+              to={`/type/${type.name}`}
             >
-              <img src={type.image} alt={type.name} />
-            </button>
+              <img src={type.image} alt={type.name} width={30} />
+            </Link>
           );
         })}
       </div>

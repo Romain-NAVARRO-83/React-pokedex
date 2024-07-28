@@ -39,7 +39,7 @@ export default function ModalPokemon({ pokemon }: ImodalPokemon) {
       <div className="modal-body flexmaster">
         <div className="s12 m6 l3 pad">
           <h4>Specs</h4>
-          <div className="flexcol specs specs">
+          <div className={`flexcol specs specs${pokemon.types[0].name}`}>
             {pokemon &&
               Object.entries(pokemon.stats).map(([key, value]) => (
                 <label key={key} htmlFor={key}>
@@ -82,19 +82,43 @@ export default function ModalPokemon({ pokemon }: ImodalPokemon) {
             ))}
           </div>
         </div>
-        <div className="s12 m6 l3 pad">
+        <div className="s12 m6 l3 pad flexmaster">
           <h4>Sprites</h4>
           {Object.entries(pokemon.sprites).map(([key, value]) => {
-            if (value) {
+            if (key === 'regular' || key === 'shiny') {
               return (
-                <div key={key}>
-                  <img src={value} alt={key} width={100} />
-                  <span>{key}</span>
+                <div key={key} className="s12 m1 l4">
+                  <img src={value} alt={key} width={75} />
+                  <h5>{key}</h5>
                 </div>
               );
             }
             return null;
           })}
+          {pokemon.sprites.gmax?.regular && (
+            <>
+              <h5>Gmax</h5>
+              <div className="s12 m3 l4">
+                <img
+                  src={pokemon.sprites.gmax.regular}
+                  alt={pokemon.name.fr}
+                  width={75}
+                />
+                <h6>Regular</h6>
+              </div>
+            </>
+          )}
+
+          {pokemon.sprites.gmax?.shiny && (
+            <div className="s12 m3 l4">
+              <img
+                src={pokemon.sprites.gmax.shiny}
+                alt={pokemon.name.fr}
+                width={75}
+              />
+              <h6>Regular</h6>
+            </div>
+          )}
         </div>
         {/* <div className="s12 m6 l3 pad">
           <h4>Teams</h4>
