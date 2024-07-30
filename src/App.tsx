@@ -7,15 +7,19 @@ import Header from './components/Header';
 import Pokemons from './components/Pokemons';
 import Teams from './components/Teams';
 import Types from './components/Types';
+import Type from './components/Type';
 import Modal from './components/Modal';
 import Footer from './components/Footer';
 import { IPokemon } from './@types/pokemon';
+import { IType } from './@types/type';
 // import { IPokemon } from './@types/pokemon';
 // import { Iteam } from './@types/team';
 
 function App() {
   const [pokemons, setPokemons] = useState<IPokemon[] | []>([]);
   const [pokemon, setPokemon] = useState<IPokemon>(pokemons[1]);
+  const [types, setTypes] = useState<IType | []>([]);
+  const [type, setType] = useState<IType | null>(null);
   // Fetch All Pokemons
   useEffect(() => {
     const fetchPokemons = async () => {
@@ -31,6 +35,38 @@ function App() {
       }
     };
     fetchPokemons();
+  }, []);
+  // Fetch All Types
+  useEffect(() => {
+    const fetchTypes = async () => {
+      try {
+        const response = await axios.get(
+          'https://tyradex.vercel.app/api/v1/types'
+        );
+        if (response.data) {
+          setTypes(response.data);
+        }
+      } catch (e) {
+        console.log('Error fetching types:', e);
+      }
+    };
+    fetchTypes();
+  }, []);
+  // Fetch One Types
+  useEffect(() => {
+    const fetchType = async () => {
+      try {
+        const response = await axios.get(
+          'https://tyradex.vercel.app/api/v1/types/1'
+        );
+        if (response.data) {
+          setType(response.data);
+        }
+      } catch (e) {
+        console.log('Error fetching type:', e);
+      }
+    };
+    fetchType();
   }, []);
   // Fetch One Pokemon
   // useEffect(() => {
@@ -80,6 +116,8 @@ function App() {
               pokemons={pokemons}
               pokemon={pokemon}
               setPokemon={setPokemon}
+              type={type}
+              setType={setType}
             />
           }
         />
@@ -93,6 +131,7 @@ function App() {
           }
         />
         <Route path="/types" element={<Types />} />
+        <Route path="/types/:type" element={<Type type={type} />} />
         {/* <Route path="/page_not_found" element={<PageNotFound />} /> */}
         <Route path="/*" element={<Navigate to="/page_not_found" />} />
       </Routes>

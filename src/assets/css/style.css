@@ -55,6 +55,7 @@ h1::before {
 
 * {
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .flexmaster {
@@ -301,6 +302,7 @@ li.card button:has(.pokemon) {
 .cardpokemon button:has(.pokemon):active,
 .cardpokemon button:has(.pokemon):focus {
   border: solid 0px transparent;
+  outline: none;
 }
 
 .cardpokemon:hover button:has(.pokemon) {
@@ -348,6 +350,7 @@ header nav li:last-of-type {
   position: fixed;
   width: 90%;
   max-width: 1200px;
+  max-height: 90vh;
   top: 50%;
   transform: translateY(100vh);
   background: rgb(38, 38, 38);
@@ -358,6 +361,7 @@ header nav li:last-of-type {
   border-radius: 10px;
   /* transform: translate(100%); */
   transition: all ease-out .5s;
+  overflow-y: auto;
 }
 
 #modal.active {
@@ -365,7 +369,8 @@ header nav li:last-of-type {
   transition: all ease-out .5s;
 }
 
-.modal-header {
+.modal-header,
+.type-header {
   border-radius: 10px 10px 0 0;
   padding: var(--mainpadding);
   margin-bottom: var(--mainpadding);
@@ -581,4 +586,33 @@ ul.scrolly figure {
   background-color: rgba(0, 0, 0, .8);
   border-radius: 5px;
   font-size: 18px;
+}
+
+.resistance {
+  margin: 0 var(--mainpadding);
+  border-radius: var(--mainpadding);
+  border: solid 1px rgba(0, 0, 0, .8);
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.resistance span:nth-child(2) {
+  padding: 5px;
+  background-color: #fff;
+  border: solid 1px rgba(0, 0, 0, .8);
+  aspect-ratio: 1 / 1;
+  height: 35px;
+  text-align: center;
+  padding-top: 8px;
+  color: #000;
+  line-height: 1;
+  border-radius: 50%;
+  /* position: absolute;
+  right: 0; */
+  /* padding: 5px; */
+  display: block;
+  /* margin: -15px -15px -15px 10px; */
 }

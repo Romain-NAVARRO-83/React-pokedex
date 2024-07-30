@@ -37,11 +37,15 @@ export default function Modal({
       <div id="modal" className={modalState ? 'active' : ''}>
         {/* {JSON.stringify(pokemon)} */}
         {modalContent.content === 'pokemon' && pokemon && (
-          <ModalPokemon pokemon={pokemon} />
+          <ModalPokemon
+            pokemon={pokemon}
+            toggleModal={toggleModal}
+            modalState={modalState}
+          />
         )}
         {/* {modalContent.content === 'team' &&
-          // <ModalTeam modalContent={modalContent} toggleModal={toggleModal} />
-          console.log('team modal')} */}
+          <ModalTeam modalContent={modalContent} toggleModal={toggleModal} />
+          } */}
       </div>
     </>
   );

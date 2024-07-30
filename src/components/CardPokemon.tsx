@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
-import axios from 'axios';
-// import { Link } from 'react-router-dom';
-import { IPokemon } from '../@types/pokemon';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { IPokemon } from '../@types/pokemon';
+import { IType } from '../@types/type';
+
 // import { Iteam } from '../@types/team';
 
 interface IPokemonProps {
@@ -17,6 +17,8 @@ interface IPokemonProps {
 
   pokemon: IPokemon;
   setPokemon: React.Dispatch<React.SetStateAction<IPokemon>>;
+  type: IType | null;
+  setType: React.Dispatch<React.SetStateAction<IType | null>>;
 }
 export default function CardPokemon({
   cardPokemon,
@@ -25,6 +27,8 @@ export default function CardPokemon({
   setModalContent,
   pokemon,
   setPokemon,
+  type,
+  setType,
 }: IPokemonProps) {
   function toggleModal() {
     setModalState(!modalState);
@@ -34,8 +38,19 @@ export default function CardPokemon({
       content: newContent,
     });
   }
-  // Fetch One Pokemon
-
+  // Fetch One Type
+  const fetchType = async (typeName: string) => {
+    try {
+      const response = await axios.get(
+        `https://tyradex.vercel.app/api/v1/types/${typeName}`
+      );
+      if (response.data) {
+        setType(response.data);
+      }
+    } catch (e) {
+      console.log('Error fetching type:', e);
+    }
+  };
   async function fetchPokemon(idPokemon: number) {
     try {
       const response = await axios.get(
@@ -56,6 +71,7 @@ export default function CardPokemon({
         type="button"
         onClick={() => {
           toggleModal();
+          changeModalContent('pokemon');
           fetchPokemon(cardPokemon.pokedex_id);
         }}
       >
@@ -69,21 +85,20 @@ export default function CardPokemon({
       </button>
       <h3>{cardPokemon.name.fr}</h3>
       <div className="pokemon-types">
-        {cardPokemon.types?.map((type) => {
+        {cardPokemon.types?.map((oneType) => {
           return (
             <Link
               type="button"
-              className={`type${type.name} typebtn`}
-              title={type.name}
-              aria-label={type.name}
-              key={type.name}
-              // onClick={() => {
-              //   toggleModal();
-              //   changeModalContent('pokemon');
-              // }}
-              to={`/type/${type.name}`}
+              className={`type${oneType.name} typebtn`}
+              title={oneType.name}
+              aria-label={oneType.name}
+              key={oneType.name}
+              onClick={() => {
+                fetchType(oneType.name);
+              }}
+              to={`/types/${oneType.name}`}
             >
-              <img src={type.image} alt={type.name} width={30} />
+              <img src={oneType.image} alt={oneType.name} width={30} />
             </Link>
           );
         })}

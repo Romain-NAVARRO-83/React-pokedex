@@ -1,12 +1,20 @@
 // import axios from 'axios';
 // import { useEffect, useState } from 'react';
-import { IPokemon, Sprites, Talent, Type } from '../@types/pokemon';
+import { Link } from 'react-router-dom';
+import { IPokemon, Talent, Type } from '../@types/pokemon';
+
 // import pokemons from '../assets/data/pokemons.json';
 
 interface ImodalPokemon {
   pokemon: IPokemon;
+  modalState: boolean;
+  toggleModal: () => void;
 }
-export default function ModalPokemon({ pokemon }: ImodalPokemon) {
+export default function ModalPokemon({
+  pokemon,
+  toggleModal,
+  modalState,
+}: ImodalPokemon) {
   // console.log(pokemon);
   return (
     <>
@@ -37,10 +45,11 @@ export default function ModalPokemon({ pokemon }: ImodalPokemon) {
         </div>
       </div>
       <div className="modal-body flexmaster">
-        <div className="s12 m6 l3 pad">
+        <div className="s12 m6 l4 pad">
           <h4>Specs</h4>
           <div className={`flexcol specs specs${pokemon.types[0].name}`}>
             {pokemon &&
+              pokemon.stats &&
               Object.entries(pokemon.stats).map(([key, value]) => (
                 <label key={key} htmlFor={key}>
                   {key}
@@ -55,23 +64,30 @@ export default function ModalPokemon({ pokemon }: ImodalPokemon) {
               ))}
           </div>
         </div>
-        <div className="s12 m6 l3 pad">
+        <div className="s12 m6 l4 pad">
           <h4>Types</h4>
           <div className="txtright">
             {pokemon.types.map((type: Type) => (
               <div key={type.name}>
                 {type.name}
-                <button
+                <Link
                   type="button"
                   className={`type${type.name} typebtn`}
                   title={type.name}
                   aria-label={type.name}
-                />
+                  key={type.name}
+                  onClick={() => {
+                    toggleModal();
+                  }}
+                  to={`/types/${type.name}`}
+                >
+                  <img src={type.image} alt={type.name} width={30} />
+                </Link>
               </div>
             ))}
           </div>
         </div>
-        <div className="s12 m6 l3 pad">
+        <div className="s12 m6 l4 pad">
           <h4>Talents</h4>
           <div className="txtright">
             {pokemon.talents?.map((talent: Talent) => (
@@ -82,7 +98,8 @@ export default function ModalPokemon({ pokemon }: ImodalPokemon) {
             ))}
           </div>
         </div>
-        <div className="s12 m6 l3 pad flexmaster">
+        <hr />
+        <div className="s12 m6 l6 pad flexmaster">
           <h4>Sprites</h4>
           {Object.entries(pokemon.sprites).map(([key, value]) => {
             if (key === 'regular' || key === 'shiny') {

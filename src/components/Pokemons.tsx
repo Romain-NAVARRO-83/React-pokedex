@@ -3,6 +3,7 @@ import CardPokemon from './CardPokemon';
 // import pokemons from '../assets/data/pokemons.json';
 // import { IPokemons } from '../@types/pokemon';
 import { IPokemon } from '../@types/pokemon';
+import { IType } from '../@types/type';
 
 interface IPokemonsProps {
   pokemons: IPokemon[];
@@ -16,6 +17,8 @@ interface IPokemonsProps {
       content: string;
     }>
   >;
+  type: IType | null;
+  setType: React.Dispatch<React.SetStateAction<IType | null>>;
 }
 
 export default function Pokemons({
@@ -25,6 +28,8 @@ export default function Pokemons({
   setModalContent,
   pokemon,
   setPokemon,
+  type,
+  setType
 }: IPokemonsProps) {
   return (
     // fonction de changement de pokemon
@@ -41,6 +46,8 @@ export default function Pokemons({
             setModalContent={setModalContent}
             setPokemon={setPokemon}
             pokemon={pokemon}
+            type={type}
+            setType={setType}
           />
         );
       })}
